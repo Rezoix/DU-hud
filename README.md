@@ -12,5 +12,5 @@
     1. `system->update()` where hud refreshes every frame
         * Paste `updateHud()` into `system->update()`
     2. `unit->tick()` where hud refresh rate can be chosen
-        * Paste `unit.setTimer("updateHud", 1/x)` into unit.start(). For example `unit.setTimer("updateHud", 1/30)` has refresh rate of 30 times a second
+        * Paste `unit.setTimer("updateHud", 1/x)` into `unit->start()`. For example `unit.setTimer("updateHud", 1/30)` has refresh rate of 30 times a second
         * Create `unit->tick(updateHud)` event and paste `updateHud()` into it
