@@ -155,11 +155,11 @@ function updateHud()
         <line x1="960" y1="730" x2="960" y2="]]..(730+len)..[[" style="stroke:rgb(1, 165, 177);opacity:0.3;stroke-width:2"/></g>]]
     end
     
-    -- -unit.getThrottle()*0.97
-    content = content..[[<g transform="translate(0 ]]..(-50)..[[)">
+    if unit.getThrottle ~= nil then
+        content = content..[[<g transform="translate(0 ]]..(-50 + (-unit.getThrottle()/2))..[[)">
             <polygon points="788,650 800,647 800,653" style="fill:rgb(1, 165, 177);opacity:0.7"/>
         </g>]]
-    
+    end
 
     content = content..[[
 
