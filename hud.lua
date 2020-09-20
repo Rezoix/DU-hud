@@ -1,5 +1,3 @@
-require("Helpers")
-
 system.showScreen(1)
 
 function getRelativePitch(velocity) 
