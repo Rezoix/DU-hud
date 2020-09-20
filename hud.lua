@@ -156,7 +156,7 @@ function updateHud()
     end
     
     if unit.getThrottle ~= nil then
-        content = content..[[<g transform="translate(0 ]]..(-50 + unit.getThrottle())..[[)">
+        content = content..[[<g transform="translate(0 ]]..(-50 + (-unit.getThrottle()/2))..[[)">
             <polygon points="788,650 800,647 800,653" style="fill:rgb(1, 165, 177);opacity:0.7"/>
         </g>]]
     end
